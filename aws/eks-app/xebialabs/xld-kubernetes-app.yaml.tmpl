@@ -1,0 +1,19 @@
+{{$app := .AppName | kebabcase}}
+apiVersion: xl-deploy/v1
+kind: Applications
+spec:
+- name: {{$app}}
+  type: core.Directory
+  children:
+    - name: K8S
+      type: core.Directory
+      children:
+      - name: {{$app}}-nginx-app
+        type: udm.Application
+        children:
+        - name: !value BUILD_ID
+          type: udm.DeploymentPackage
+          deployables:
+          - name: {{$app}}-nginx
+            type: k8s.ResourcesFile
+            file: !file ../kubernetes/nginx.yaml
