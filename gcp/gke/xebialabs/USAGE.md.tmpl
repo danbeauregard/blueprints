@@ -19,13 +19,13 @@ To deploy this blueprint, follow the steps below:
     xl apply -f xebialabs.yaml
     ```
 
-2. Go to XL Release, look for the "{{$cluster}}-create" template, and start a new release from it.
-3. Once you are done, go to XL Release, look for the "{{$cluster}}-destroy" template, and start a new release from it to automatically rollback and destroy the resources you created.
+2. Go to XL Release, click on `Design`, then `Templates` and look for the "{{$cluster}}-create" template, and start a new release from it.
+3. Once you are done, go to XL Release, look for the "{{$cluster}}-destroy" template in the same location, and start a new release from it to automatically rollback and destroy the resources you created.
 
 ## Minimum Required versions
 
-This blueprint version requires at least the below versions of the specified tools to work properly.
+This blueprint version requires at least the below versions of the specified products to work properly.
 
-XL Release: Version 8.6.1
-XL Deploy: Version 8.6.1
-XL CLI: Version 8.6
+- XL Release: Version 8.6.1
+- XL Deploy: Version 8.6.1
+- XL CLI: Version 8.6
