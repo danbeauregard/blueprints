@@ -26,7 +26,7 @@ gcloud init
 
 ### Creating Google Cloud project and service account for terraform
 
-Best practice to use separate account "technical account" to manage infrastructure, this account can be used in automated code deployment like in Terraform or XL Deploy or any other product you may choose.
+Best practice to use separate account "technical account" to manage infrastructure, this account can be used to interact with GCP by Terraform, XL Deploy or any other product you may choose.
 
 > NOTE: You need to have proper permissions and privileges in the GCP account to execute these commands. If you are using a personal account you should be having these as you will be the admin. If you are using a company/enterprise account please check with your account administrator. 
 
