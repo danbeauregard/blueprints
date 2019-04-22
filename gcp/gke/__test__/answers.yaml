@@ -1,4 +1,4 @@
-ClusterName: testgke
+ClusterName: gke-test
 K8SMasterUser: admin
 K8SMasterPassword: password12345678
 GCPProjectID: tech-marketing-236315
